@@ -79,18 +79,53 @@
     left: 0;
     background-position: -100% 0;
 } */
-#My_Description{
+
+#Portfolio_Description{
     display: inline-block;
     background-color: rgb(46,39,99);
+    font-family: "Audiowide";
     width:50%;
-    height:50px;
+    height:70px;
     transition: 1s;
     color: rgb(192,192,192)
 }
-#My_Description:hover {
+#Portfolio_Description:hover {
     height: 500px;
     transition: height 2s;
 }
+#Portfolio_Description_Title {
+    font-family: "Audiowide";
+    display: block;
+    /* background-color: red; */
+    transition: 2s;
+    font-size: 300%;
+}
+#Portfolio_Description:hover #Portfolio_Description_Title {
+    /* display: block; */
+    /* z-index: +10; */
+    /* background-color: beige; */
+    /* position: relative; */
+    transition: 1s;
+}
+#Portfolio_Description_Main {
+    visibility: hidden;
+    font-size:150%;
+    opacity: 0;
+    /* background-color: green; */
+    font-family: 'Roboto Slab' , serif;
+    /* z-index: +10; */
+    transition: visibility 0s, opacity 2s linear;
+    transition-delay: 200ms;
+    /* height: 100%; */
+    /* width: cover; */
+}
+#Portfolio_Description:hover #Portfolio_Description_Main {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 300ms;
+}
+
 
 #Cool_Pic {
     display: block;
@@ -131,6 +166,9 @@
 #Description_Title {
     font-family: "Audiowide";
     color: rgb(15,12,8)
+}
+#Description_Paragraph {
+    font-family: 'Roboto Slab' , serif;
 }
 
 #Bottom_Part{
