@@ -1,211 +1,146 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+}
 
-.Top{
+/* Top Section */
+.Top {
     width: 100%;
-    background: linear-gradient(45deg, blue, white);
-    background-size: 200% 100%;
-    
-    animation-name: Top_Animation;
-    animation-delay: 1s;
-    animation-direction: alternate;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-
-    padding-bottom: 3%;
-    
-}
-
-@keyframes Top_Animation{
-    0% {background-position: 0%;}
-    50% {background-position: 100%;}
-}
-
-/* .Main_Body{
-}
-.List_Of_Pages_Background{
-} */
-.My_Description{
+    background: linear-gradient(45deg, #007bff, #ffffff);
+    padding: 20px 0;
     text-align: center;
-    background-color: rgb(12,35,64);
 }
 
-.Column_Link{
-    float: left;
-    width: 25%;
-    /* background-color: blue; */
-    text-align: center;
-    color: rgb(15,12,8);
+#Cool_Pic {
+    border-radius: 50%; /* Rounded profile picture */
+    max-width: 20%; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Navigation Links */
+#Top_Part {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new lines */
+    justify-content: space-around; /* Align items with equal space around them */
+    align-items: stretch; /* Stretch items to fill container height */
+    padding: 0; /* Remove padding to eliminate extra space */
+}
+
+.Column_Link {
+    color: #222;
     text-decoration: none;
-    font-size: 170%;
-    font-family: 'Trebuchet MS';
-    
+    font-size: 1rem; /* Adjust font size */
+    margin: 0; /* Remove margin to eliminate extra space */
+    padding: 10px 0; /* Adjust padding for top and bottom spacing */
+    background: linear-gradient(to right, #b4b4b4 50%, rgba(50, 75, 125, 0.8) 50%);
     background-size: 200% 200%;
-    background-image: linear-gradient(to right, rgb(180,180,180) 50%, rgb(50,75,125,.8) 50% );
+    
     transition: background-position 1s;
+    transition: all .7s;
+    flex: 1; /* Make columns stretch width-wise */
+    text-align: center; /* Center align text */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    display: flex; /* Use flexbox for inner alignment */
+    justify-content: center; /* Center align text horizontally */
+    align-items: center; /* Center align text vertically */
 }
-.Column_Link:hover{
+
+
+.Column_Link:hover {
     background-position: -100% 0;
-    color: rgb(240,240,240)
+    color: #fff;
 }
 
-/* #Top_Part{
-    background-color: rgb(250,50,150,.9);
-    position: fixed;
-    bottom: 100px;
-    width: 100%;
-    height: 30px;
+
+/* Main Body Content */
+.Main_Body {
+    background-color: #f2f2f2;
+    padding: 20px;
     text-align: center;
-    overflow: hidden;
-}
-#Top_Part a{
-    display: inline-block;
-    text-align: center;
-    font-size: 170%;
-    padding: 4px 16px;
-    background: #f1f1f1;
-    text-decoration: none;
-    background-color: rgb(50, 100, 100);
-    color: rgb(25,250,250);
-    transition: .3s;
-    width: 15%;
-    background-size: 200% 200%;
-    background-image: linear-gradient(to right, rgb(150,150,150) 50%, rgb(50,75,125,.8) 50% );
-    transition: background-position .5s;
 }
 
-#Top_Part a:hover{
-    background-color: rgb(195, 145, 155);
-    color: rgb(5,5,5);
-    transition: 1s;
-    left: 0;
-    background-position: -100% 0;
-} */
-
-#Portfolio_Description{
-    display: inline-block;
-    background-color: rgb(46,39,99);
-    font-family: "Audiowide";
-    width:50%;
-    height:70px;
-    transition: 1s;
-    color: rgb(192,192,192)
+.My_Description {
+    background-color: #0c2340;
+    color: #c0c0c0;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-#Portfolio_Description:hover {
-    height: 500px;
+
+#Portfolio_Description {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 2rem; /* Adjust font size */
     transition: height 2s;
+    margin: 0;
+    padding: 0;
 }
+
 #Portfolio_Description_Title {
-    font-family: "Audiowide";
-    display: block;
-    /* background-color: red; */
-    transition: 2s;
-    font-size: 300%;
+    font-size: 3rem; /* Adjust font size */
 }
-#Portfolio_Description:hover #Portfolio_Description_Title {
-    /* display: block; */
-    /* z-index: +10; */
-    /* background-color: beige; */
-    /* position: relative; */
-    transition: 1s;
-}
+
 #Portfolio_Description_Main {
     visibility: hidden;
-    font-size:150%;
     opacity: 0;
-    /* background-color: green; */
-    font-family: 'Roboto Slab' , serif;
-    /* z-index: +10; */
-    transition: visibility 0s, opacity 2s linear;
-    transition-delay: 200ms;
-    /* height: 100%; */
-    /* width: cover; */
+    transition: visibility 0s, opacity 1s linear;
 }
+
 #Portfolio_Description:hover #Portfolio_Description_Main {
     visibility: visible;
     opacity: 1;
-    transition: 1s;
-    transition-delay: 300ms;
 }
 
-
-#Cool_Pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20%;
-}
-
-
-/* .Column{
-    display: inline-block;
-    background-color: rgb(180,10,10,.3);
-    
-    border-style: solid;
-    border-color: aquamarine;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-} */
-/* .C_One, .C_Two, .C_Three{
-    width: 33.3%;
-    height:auto;
-    padding: 0;
-    margin: 0;
-} */
-
-/* .section_1{
-    display:flex;
-    justify-content: space-around;
-} */
-
-
-#First_Body{
-    background-color: rgb(180,180,180, .6);
-    height: 400px;
+#First_Body {
+    background-color: rgba(180, 180, 180, 0.6);
+    padding: 20px;
+    margin-top: 20px;
 }
 
 #Description_Title {
-    font-family: "Audiowide";
-    color: rgb(15,12,8)
-}
-#Description_Paragraph {
-    font-family: 'Roboto Slab' , serif;
+    font-family: 'Audiowide', sans-serif;
+    color: #0f0c08;
+    font-size: 2.5rem; /* Adjust font size */
 }
 
-#Bottom_Part{
-    background-color: rgb(30,30,70,.7);
+#Description_Paragraph {
+    font-size: 1.1rem; /* Adjust font size */
+    line-height: 1.6; /* Adjust line height */
+}
+
+/* Bottom Links */
+#Bottom_Part {
     position: fixed;
     bottom: 0;
+    right: 0px;
     width: 100%;
-    height: 30px;
-    text-align: center;
-    overflow: hidden;
+    height: 50px; /* Adjust height as needed */
+    background: linear-gradient(45deg, #007bff, #ffffff); /* Gradient colors */
+    background-size: 200% 100%; /* Gradient size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 }
-#Bottom_Part a{
-    /* display: inline-block; */
-    text-align: center;
-    font-size: 170%;
-    padding: 4px 16px;
-    background: #f1f1f1;
+
+#Bottom_Part a {
     text-decoration: none;
-    /* background-color: rgb(50, 100, 100); */
-    color: rgb(250,250,250);
-    /* transition: .3s; */
-    width: 15%;
-    background-size: 200% 200%;
-    background-image: linear-gradient(to right, rgb(150,150,150) 50%, rgb(50,75,125,.8) 50% );
-    transition: background-position .5s;
+    color: #fff; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    margin: 0 10px; /* Margin between links */
+    background: linear-gradient(to right, rgba(150,150,150,.8) 50%, rgba(50, 75, 125, 0.8) 50%); /* Gradient background */
+    background-size: 200% 100%; /* Gradient size */
+    transition: background-position 0.3s ease; /* Smooth transition */
+    display: flex; /* Ensure flex properties apply */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    height: 60%; 
 }
 
-#Bottom_Part a:hover{
-    /* background-color: rgb(195, 145, 155);
-    color: rgb(5,5,5);
-    transition: 1s;
-    left: 0; */
-    background-position: -100% 0;
-    /* font */
+#Bottom_Part a:hover {
+    background-position: -100% 0; /* Move gradient on hover */
 }
 
-/* .Box_Slide{
-    position: absolute;
-    background-color: black;
-} */

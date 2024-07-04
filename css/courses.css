@@ -1,0 +1,145 @@
+.Top {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background: linear-gradient(45deg, #007bff, #ffffff); /* Gradient colors */
+    background-size: 200% 100%; /* Gradient size */
+    animation: Top_Animation 20s ease-in-out infinite; /* Animation properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Roboto Slab', sans-serif; /* Apply Roboto Slab font */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Audiowide', sans-serif; /* Apply Audiowide font */
+    font-size: 36px; /* Adjust font size */
+}
+
+@keyframes Top_Animation {
+    0% { background-position: 0% 50%; } /* Start position */
+    50% { background-position: 100% 50%; } /* Middle position */
+    100% { background-position: 0% 50%; } /* End position */
+}
+
+
+.topPart {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items evenly */
+    overflow: hidden; /* Clear floats */
+    background-color: #f0f0f0; /* Light background */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 5px 5px rgba(53,121,209,.2); /* Subtle shadow */
+    margin-bottom: 5px; /* Spacing between sections */
+    font-family: 'Roboto Slab', serif;
+}
+
+.topPart a {
+    flex: 1; /* Equal width for all anchor tags */
+    text-align: center; /* Center text */
+    padding: 12px 0; /* Vertical padding */
+    text-decoration: none; /* Remove underline */
+    color: #0f0c08; /* Dark text color */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#topPart2 a {
+    font-family: 'Trebuchet MS', sans-serif; /* Font family */
+}
+
+#current {
+    background-color: #ccc;
+}
+
+.topPart a:hover {
+    background-color: #3579d1; /* Darker background on hover */
+    color: #fff; /* Light text color on hover */
+}
+
+
+
+
+.content_courses {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Added margin-bottom to create space at the end */
+    font-family: 'Roboto Slab', serif;
+}
+
+.content_courses h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 1000;
+    color: #222;
+}
+
+.content_courses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content_courses li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.content_courses li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.content_courses li h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+
+
+#Bottom_Part {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    height: 50px; /* Adjust height as needed */
+    background: linear-gradient(45deg, #007bff, #ffffff); /* Gradient colors */
+    background-size: 200% 100%; /* Gradient size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#Bottom_Part a {
+    text-decoration: none;
+    color: #fff; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    margin: 0 10px; /* Margin between links */
+    background: linear-gradient(to right, rgba(150,150,150,.8) 50%, rgba(50, 75, 125, 0.8) 50%); /* Gradient background */
+    background-size: 200% 100%; /* Gradient size */
+    transition: background-position 0.3s ease; /* Smooth transition */
+    display: flex; /* Ensure flex properties apply */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    height: 60%; 
+}
+
+#Bottom_Part a:hover {
+    background-position: -100% 0; /* Move gradient on hover */
+}
+
