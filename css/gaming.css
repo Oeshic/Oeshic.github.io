@@ -1,18 +1,19 @@
 body {
     background-color: #0c2340;
 }
+
 .Top {
     position: relative;
     width: 100%;
-    height: 200px; /* Adjust height as needed */
-    background: linear-gradient(45deg, #0c2340, #007bff); /* Gradient colors */
-    background-size: 200% 100%; /* Gradient size */
-    animation: Top_Animation 20s ease-in-out infinite; /* Animation properties */
+    height: 200px;
+    background: linear-gradient(45deg, #0c2340, #007bff);
+    background-size: 200% 100%;
+    animation: Top_Animation 20s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-family: 'Roboto Slab', sans-serif; /* Apply Roboto Slab font */
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .overlay {
@@ -20,36 +21,35 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Audiowide', sans-serif; /* Apply Audiowide font */
-    font-size: 36px; /* Adjust font size */
+    font-family: 'Audiowide', sans-serif;
+    font-size: 36px;
 }
 
 @keyframes Top_Animation {
-    0% { background-position: 0% 50%; } /* Start position */
-    50% { background-position: 100% 50%; } /* Middle position */
-    100% { background-position: 0% 50%; } /* End position */
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-
 .topPart {
-    display: flex; /* Use flexbox */
-    justify-content: space-around; /* Distribute items evenly */
-    overflow: hidden; /* Clear floats */
-    background-color: #f0f0f0; /* Light background */
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 0 5px 5px rgba(53,121,209,.2); /* Subtle shadow */
-    margin-bottom: 5px; /* Spacing between sections */
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(53,121,209,.2);
+    margin-bottom: 5px;
     font-family: 'Roboto Slab', serif;
 }
 
 .topPart a {
-    flex: 1; /* Equal width for all anchor tags */
-    text-align: center; /* Center text */
-    padding: 12px 0; /* Vertical padding */
-    text-decoration: none; /* Remove underline */
-    color: #0f0c08; /* Dark text color */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #0f0c08;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #current {
@@ -57,6 +57,223 @@ body {
 }
 
 .topPart a:hover {
-    background-color: #0c2340; /* Darker background on hover */
-    color: #fff; /* Light text color on hover */
+    background-color: #0c2340;
+    color: #fff;
+}
+
+.Gaming {
+    background-color: #0c2340;
+    color: #c0c0c0;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#Gaming_Description {
+    font-family: 'Audiowide', sans-serif;
+    transition: height 2s;
+    margin: 0;
+    padding: 0;
+}
+
+#Gaming_Description_Title {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 32px;
+    color: #ccc;
+}
+
+#Gaming_Description_Main {
+    width: 90%;
+    font-size: 20px;
+    color: #888;
+    text-align: justify;
+}
+
+#Gaming_Description_Hidden {
+    font-size: 24px;
+    color: #eee;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity .5s linear;
+}
+
+#Gaming_Description:hover #Gaming_Description_Hidden {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Gaming_Projects {
+    color: #c0c0c0;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Gaming_Projects h2 {
+    font-size: 28px;
+    color: #eee;
+    margin-bottom: 15px;
+}
+
+.Gaming_Projects ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Gaming_Projects li {
+    /*
+    background-color: #888;
+    */
+    text-align: left;
+    border-radius: 5px;
+    margin: 0px 0;
+    padding-bottom: 10px;
+    width: 80%;
+    transition: font-style 0.01s;
+}
+
+.Gaming_Projects li:hover {
+    font-style: italic;
+    color: #eee;
+}
+
+.Gaming_Projects li h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+#Bottom_Part {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg, #007bff, #ffffff);
+    background-size: 200% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#Bottom_Part a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background: linear-gradient(to right, rgba(150,150,150,.8) 50%, rgba(50, 75, 125, 0.8) 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+#Bottom_Part a:hover {
+    background-position: -100% 0;
+}
+
+@media (max-width: 768px) {
+    .Top {
+        height: 150px;
+    }
+
+    .overlay {
+        font-size: 28px;
+    }
+
+    .topPart {
+        flex-direction: column;
+    }
+
+    .topPart a {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .Gaming {
+        padding: 15px;
+    }
+
+    #Gaming_Description_Title {
+        font-size: 28px;
+    }
+
+    #Gaming_Description_Main {
+        font-size: 18px;
+    }
+
+    .Gaming_Projects h2 {
+        font-size: 24px;
+    }
+
+    .Gaming_Projects li h3 {
+        font-size: 16px;
+    }
+
+    #Bottom_Part {
+        height: 40px;
+    }
+
+    #Bottom_Part a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Top {
+        height: 120px;
+    }
+
+    .overlay {
+        font-size: 24px;
+    }
+
+    .topPart {
+        flex-direction: column;
+    }
+
+    .topPart a {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .Gaming {
+        padding: 10px;
+    }
+
+    #Gaming_Description_Title {
+        font-size: 24px;
+    }
+
+    #Gaming_Description_Main {
+        font-size: 18px;
+    }
+
+    .Gaming_Projects h2 {
+        font-size: 20px;
+    }
+
+    .Gaming_Projects li h3 {
+        font-size: 14px;
+    }
+
+    #Bottom_Part {
+        height: 30px;
+    }
+
+    #Bottom_Part a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }

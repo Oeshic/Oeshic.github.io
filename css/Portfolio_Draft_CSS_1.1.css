@@ -1,11 +1,87 @@
-/* Global Styles */
+
 body {
     font-family: 'Roboto Slab', serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px 20px 0px;
 }
 
+#Top_Part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Column_Link {
+    color: #222;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 0;
+    background: linear-gradient(to right, #b4b4b4 50%, rgba(50, 75, 125, 0.8) 50%);
+    background-size: 200% 200%;
+    transition: background-position 1s;
+    transition: all .7s;
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.5rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 2px;
+
+
+    font-size: 1.2rem;
+}
+
+.Column_Link_Name {
+    background: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 9.5rem; 
+    height: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Column_Link:hover {
+    background-position: -100% 0;
+    color: #fff;
+
+
+}
+.Column_Link_Name:hover {
+    background-position: -000% 0;
+    color: #222;
+}
+
+
+
+
+
+/*
+#Top_Part {
+    display: flex;
+    
+    
+    
+    
+    
+    
+    background-color: rgba(0, 0, 0, 0.5); 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: stretch; 
+     padding: 0; 
+    
+}
+*/
+
+
+
 /* Top Section */
+/*
 .Top {
     width: 100%;
     background: linear-gradient(45deg, #007bff, #ffffff);
@@ -13,58 +89,28 @@ body {
     text-align: center;
 }
 
+*/
 #Cool_Pic {
-    border-radius: 50%; /* Rounded profile picture */
-    max-width: 20%; /* Adjust size as needed */
+    margin: 3rem 0rem 3rem 0rem;
+    border-radius: 50%; 
+    max-width: 40%; 
     height: auto;
 }
-
 /* Navigation Links */
-#Top_Part {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to new lines */
-    justify-content: space-around; /* Align items with equal space around them */
-    align-items: stretch; /* Stretch items to fill container height */
-    padding: 0; /* Remove padding to eliminate extra space */
-}
-
-.Column_Link {
-    color: #222;
-    text-decoration: none;
-    font-size: 1rem; /* Adjust font size */
-    margin: 0; /* Remove margin to eliminate extra space */
-    padding: 10px 0; /* Adjust padding for top and bottom spacing */
-    background: linear-gradient(to right, #b4b4b4 50%, rgba(50, 75, 125, 0.8) 50%);
-    background-size: 200% 200%;
-    
-    transition: background-position 1s;
-    transition: all .7s;
-    flex: 1; /* Make columns stretch width-wise */
-    text-align: center; /* Center align text */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
-    display: flex; /* Use flexbox for inner alignment */
-    justify-content: center; /* Center align text horizontally */
-    align-items: center; /* Center align text vertically */
-}
-
-
-.Column_Link:hover {
-    background-position: -100% 0;
-    color: #fff;
-}
 
 
 /* Main Body Content */
 .Main_Body {
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
 }
 
 .My_Description {
+    /*
     background-color: #0c2340;
-    color: #c0c0c0;
+    */
+    color: #222;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -77,20 +123,34 @@ body {
     padding: 0;
 }
 
+/*
 #Portfolio_Description_Title {
-    font-size: 3rem; /* Adjust font size */
+    font-size: 3rem;
 }
+*/
 
 #Portfolio_Description_Main {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    width: 70%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /*
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     transition: visibility 0s, opacity 1s linear;
+    */
 }
-
+/*
 #Portfolio_Description:hover #Portfolio_Description_Main {
     visibility: visible;
     opacity: 1;
 }
+    */
 
 #First_Body {
     background-color: rgba(180, 180, 180, 0.6);
@@ -101,12 +161,25 @@ body {
 #Description_Title {
     font-family: 'Audiowide', sans-serif;
     color: #0f0c08;
-    font-size: 2.5rem; /* Adjust font size */
+    font-size: 2.5rem; 
+    
 }
 
 #Description_Paragraph {
-    font-size: 1.1rem; /* Adjust font size */
-    line-height: 1.6; /* Adjust line height */
+    font-size: 1.1rem; 
+    line-height: 1.5; 
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    width: 70%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Description_Email {
+    font-weight: bold;
+    color: #007bff;
 }
 
 /* Bottom Links */
@@ -133,7 +206,7 @@ body {
     margin: 0 10px; /* Margin between links */
     background: linear-gradient(to right, rgba(150,150,150,.8) 50%, rgba(50, 75, 125, 0.8) 50%); /* Gradient background */
     background-size: 200% 100%; /* Gradient size */
-    transition: background-position 0.3s ease; /* Smooth transition */
+    transition: background-position 0.5s ease-out; /* Smooth transition */
     display: flex; /* Ensure flex properties apply */
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
@@ -144,3 +217,118 @@ body {
     background-position: -100% 0; /* Move gradient on hover */
 }
 
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 0px 0px 10px 0px;
+        font-size: 12px;
+    }
+
+    #Top_Part {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .Column_Link {
+        font-size: .85rem;
+    }
+
+    .Column_Link_Name {
+        font-size: 1.1rem;
+    }
+
+    #Portfolio_Description_Main {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 10px;
+    }
+
+    #Description_Title {
+        font-size: 1.5rem; 
+    }
+
+    #Bottom_Part {
+        height: 60px; /* Increase height for better touch targets on mobile */
+    }
+
+    #Bottom_Part a {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 8px 16px; /* Adjust padding for better spacing */
+        margin: 5px 0; /* Reduce margin and stack links */
+        width: 100%; /* Make links full width for smaller screens */
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 0px 0px 15px 0px;
+        font-size: 14px;
+    }
+
+    #Top_Part {
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .Column_Link {
+        font-size: .85rem;
+    }
+
+    .Column_Link_Name {
+        font-size: 1.2rem;
+    }
+
+    #Portfolio_Description_Main {
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    #Description_Title {
+        font-size: 1.8rem;
+    }
+
+    #Bottom_Part a {
+        font-size: 14px; /* Slightly smaller font size for tablets */
+        padding: 10px 18px; /* Adjust padding for tablets */
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        margin: 0px 0px 20px 0px;
+        font-size: 16px;
+    }
+
+    #Top_Part {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .Column_Link {
+        font-size: 1.2rem;
+    }
+
+    .Column_Link_Name {
+        font-size: 1.5rem;
+    }
+
+    #Portfolio_Description_Main {
+        width: 70%;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        padding: 20px;
+    }
+
+    #Description_Title {
+        font-size: 2.5rem; /* Larger font size for desktop and larger screens */
+    }
+}
